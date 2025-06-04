@@ -5,10 +5,11 @@ import { Product } from '../types';
 
 const ProductGrid: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
-  const categories = ['all', ...new Set(allProducts.map(p => p.category))];
+  const excludedCategories = ['अवजारे', 'सिंचन', 'उपकरणे'];
+  const categories = ['all', ...Array.from(new Set(allProducts.map(p => p.category))).filter(category => !excludedCategories.includes(category))];
 
   const filteredProducts = selectedCategory === 'all'
-    ? allProducts
+    ? allProducts.filter(p => !excludedCategories.includes(p.category))
     : allProducts.filter(p => p.category === selectedCategory);
 
   return (

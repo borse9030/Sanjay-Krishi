@@ -1,12 +1,13 @@
 import { Product } from '../types';
 
+
 export const allProducts: Product[] = [
   {
     id: '1',
     name: 'सेंद्रिय बियाणे संच',
     price: 19.99,
     category: 'बियाणे',
-    image: 'https://images.pexels.com/photos/7728082/pexels-photo-7728082.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    image: '/img/rSSl4s4S.jpeg',
     onSale: false
   },
   {
@@ -14,7 +15,7 @@ export const allProducts: Product[] = [
     name: 'प्रीमियम बाग फावडे',
     price: 24.99,
     category: 'अवजारे',
-    image: 'https://images.pexels.com/photos/296230/pexels-photo-296230.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    image: '/img/AGS-S-3013_1.webp',
     onSale: false
   },
   {
@@ -23,7 +24,7 @@ export const allProducts: Product[] = [
     price: 49.99,
     originalPrice: 59.99,
     category: 'सिंचन',
-    image: 'https://images.pexels.com/photos/3444345/pexels-photo-3444345.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    image: ' /img/rasi-rch-659.jpg',
     onSale: true
   },
   {

@@ -7,8 +7,13 @@ interface ProductCardProps {
   product: Product;
 }
 
+const CONVERSION_RATE = 82; // Conversion rate from USD to INR
+
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   const { addToCart } = useCart();
+
+  const priceInRupees = product.price * CONVERSION_RATE;
+  const originalPriceInRupees = product.originalPrice ? product.originalPrice * CONVERSION_RATE : undefined;
   
   return (
     <div className="bg-gray-800 border border-gray-700 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-2">
@@ -29,9 +34,9 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         <h3 className="text-xl font-bold mt-1 text-white">{product.name}</h3>
         <div className="mt-2 flex items-center justify-between">
           <div>
-            <span className="text-lg font-bold text-white">${product.price.toFixed(2)}</span>
-            {product.originalPrice && (
-              <span className="text-sm text-gray-400 line-through ml-2">${product.originalPrice.toFixed(2)}</span>
+            <span className="text-lg font-bold text-white">₹{priceInRupees.toFixed(2)}</span>
+            {originalPriceInRupees && (
+              <span className="text-sm text-gray-400 line-through ml-2">₹{originalPriceInRupees.toFixed(2)}</span>
             )}
           </div>
           <button 
