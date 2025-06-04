@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
               <span className="text-xl font-bold text-white">संजय कृषी केंद्र</span>
             </div>
             <p className="mb-4">
-              २०१० पासून दर्जेदार शेती उत्पादने पुरवत आहोत. शेतीतील यशासाठी आपला विश्वासू भागीदार.
+              २०२२ पासून दर्जेदार शेती उत्पादने पुरवत आहोत. शेतीतील यशासाठी आपला विश्वासू भागीदार.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
@@ -54,15 +54,15 @@ const Footer: React.FC = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 text-green-400 mr-2 mt-0.5" />
-                <span>१२३ फार्म रोड, ग्रामीण भाग, महाराष्ट्र ४१६४१६</span>
+                <span>स्टेशन रोड नगर पालिका च्य ा बजू ला संजय कृषी केंद्र दुकान क्र.34</span>
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 text-green-400 mr-2" />
-                <span>+९१ ९८७६५४३२१०</span>
+                <span>9423431450</span>
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 text-green-400 mr-2" />
-                <span>info@sanjaykrishikendra.com</span>
+                <span>sanjaykrish96@gmail.com</span>
               </li>
             </ul>
           </div>
