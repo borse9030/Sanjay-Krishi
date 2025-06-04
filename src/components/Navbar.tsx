@@ -44,7 +44,7 @@ const Navbar: React.FC<NavbarProps> = ({ toggleCart }) => {
             <div className="ml-10 flex items-center space-x-4">
               <a href="/" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">मुख्यपृष्ठ</a>
               <a href="#products" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">उत्पादने</a>
-              <a href="#about" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">आमच्याबद्दल</a>
+              {/* Removed About Us link */}
               <a href="#contact" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">संपर्क</a>
             </div>
           </div>
@@ -91,13 +91,7 @@ const Navbar: React.FC<NavbarProps> = ({ toggleCart }) => {
             >
               उत्पादने
             </a>
-            <a 
-              href="#about" 
-              className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              आमच्याबद्दल
-            </a>
+            {/* Removed About Us link */}
             <a 
               href="#contact" 
               className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700"

@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-2">
               <li><a href="/" className="hover:text-green-400 transition-colors">मुख्यपृष्ठ</a></li>
               <li><a href="#products" className="hover:text-green-400 transition-colors">उत्पादने</a></li>
-              <li><a href="#about" className="hover:text-green-400 transition-colors">आमच्याबद्दल</a></li>
+              {/* Removed About Us link */}
               <li><a href="#contact" className="hover:text-green-400 transition-colors">संपर्क</a></li>
               <li><a href="#" className="hover:text-green-400 transition-colors">गोपनीयता धोरण</a></li>
             </ul>
